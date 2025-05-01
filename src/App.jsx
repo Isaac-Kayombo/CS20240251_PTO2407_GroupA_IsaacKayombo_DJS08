@@ -15,12 +15,14 @@
  */
 import Home from './Home'
 import About from './About'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <Link to="/">HOME</Link>
+    <Link to="/about">ABOUT</Link>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
