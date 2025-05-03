@@ -15,6 +15,7 @@
  */
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
+import Login from './pages/Login'
 import About from './pages/About'
 import Vans from './pages/Vans/Vans'
 import VanDetail from './pages/Vans/VanDetail'
@@ -43,6 +44,10 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='vans' element={<Vans />} />
           <Route path='vans/:id' element={<VanDetail />} />
+          <Route
+            path="login"
+            element={<Login />}
+          />
 
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
